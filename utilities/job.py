@@ -178,6 +178,8 @@ class MetricExtractor:
                     val = min([float(m) for m in vals])
                 elif self.calculate_method is "max":
                     val = max([float(m) for m in vals])
+                elif self.calculate_method is "all":
+                    val = [float(m) for m in vals]
                 break
 
         return val
